@@ -1,0 +1,13 @@
+nav {
+    position: fixed;
+}
+
+.hero {
+    background-image: url("../img/background-foret.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
