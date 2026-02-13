@@ -19,12 +19,12 @@
 <body>
 
     <!-- Bar de navigation -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar bg-dark-tech">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
           <div class="container-fluid">
 
-            <a class="navbar-brand ms-5 mb-2" href="#">
-              <img src="img/logo_arkai.svg" alt="Logo ArkAI" width="150px">
+            <a class="navbar-brand ms-2 mb-2" href="#">
+              <img class="logo" src="img/logo_arkai.svg" alt="Logo ArkAI">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
                   <a class="nav-link nav-link-classic fs-5 px-4 fw-bold text-uppercase active" aria-current="page" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link btn btn-success fs-5 px-4 m-2 text-white ms-2 active" aria-current="page" href="#contact">Contact</a>
+                  <a class="nav-link btn-primary btn fs-5 px-4 m-2 text-white ms-2 active" aria-current="page" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -51,107 +51,155 @@
         </nav>
     </header>
 
-    <!-- Section HERO -->
-    <section class="hero vh-100 w-100 text-center d-flex flex-column align-items-center justify-content-center">
-        <h1 class="text-white display-1 fw-bold">ArkAI</h1>
-        <p class="text-white mb-4 display-6 display-sm-1 fst-italic bg-success bg-opacity-50 px-2">"Une IA au service de l'écologie"</p>
-        <a href="#a-propos" class="btn btn-primary btn-lg px-5 py-3">Découvrez-nous</a>
-    </section>
+    <main>
 
-    <!-- Section A propros -->
-    <section class="py-5"> <div class="container"> <h2 class="text-center m-4" id="a-propos">A propos</h2>
-      <div class="container">
-        <div class="row justify-content-center">
+      <!-- Section HERO -->
+      <section class="hero vh-100 w-100 text-center d-flex flex-column align-items-center justify-content-center">
+          <h1 class="text-white display-1 fw-bold">ArkAI</h1>
+          <p class="text-white mb-4 display-6 fst-italic">"Une IA au service de l'écologie"</p>
+          <a href="#a-propos" class="btn btn-primary btn-lg px-5 py-3">Découvrez-nous</a>
+      </section>
 
-          <div class="col-12 col-md-6 col-lg-6">
-            <img src="img/illustrations/illustration-cpu-green-arkai.png" class="w-100 h-100" alt="Illustration d'un processeur avec des feuilles au-dessus">
-          </div>
+      <!-- Section A propros -->
+      <section class="py-5">
 
-          <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
-            <h4 class="fw-bold">Notre Mission</h4>
-            <p>
-              Fondée par Louis MEDO, ArkAI est née d'un constat urgent : l'impact carbone de 
-              l'intelligence artificielle est exponentiel. Nous refusons de choisir entre 
-              innovation technologique et préservation de l'environnement. Notre objectif est de 
-              créer une IA générative « vertueuse » et durable.
-            </p>
-            <h4 class="fw-bold">Le défi</h4>
-            <p>
-              Les modèles d'IA actuels sont énergivores et dépendent de processeurs graphiques 
-              (GPU) coûteux et rares. Cette course à la puissance matérielle freine l'accessibilité 
-              et pèse lourdement sur la planète.
-            </p>
-            <h4 class="fw-bold">La Solution Feronia</h4>
-            <p>
-              Avec notre technologie brevetée de Switch Learning, nous avons développé Feronia. Cette 
-              solution unique optimise les unités asynchrones des processeurs standards (CPU), éliminant 
-              le besoin de super-calculateurs GPU.
-            </p>
-            <ul>
-              <li><span class="fw-bold">Résultat</span> : Une réduction de <span class="fw-bold">40 %</span> de la consommation d'énergie et des coûts d'infrastructure drastiquement réduits.</li>
-            </ul>
+        <h2 class="text-center display-5 fw-bold" id="a-propos">À propos</h2>
+        <div class="divider mx-auto bg-primary mb-2"></div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+
+            <div class="col-12 col-md-6 col-lg-6">
+              <img src="img/illustrations/illustration-cpu-green-arkai.png" class="w-100 h-100" alt="Illustration d'un processeur avec des feuilles au-dessus">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
+              <h4 class="fw-bold">Notre Mission</h4>
+              <p>
+                Fondée par Louis MEDO, ArkAI est née d'un constat urgent : l'impact carbone de 
+                l'intelligence artificielle est exponentiel. Nous refusons de choisir entre 
+                innovation technologique et préservation de l'environnement. Notre objectif est de 
+                créer une IA générative « vertueuse » et durable.
+              </p>
+              <h4 class="fw-bold">Le défi</h4>
+              <p>
+                Les modèles d'IA actuels sont énergivores et dépendent de processeurs graphiques 
+                (GPU) coûteux et rares. Cette course à la puissance matérielle freine l'accessibilité 
+                et pèse lourdement sur la planète.
+              </p>
+              <h4 class="fw-bold">La Solution Feronia</h4>
+              <p>
+                Avec notre technologie brevetée de Switch Learning, nous avons développé Feronia. Cette 
+                solution unique optimise les unités asynchrones des processeurs standards (CPU), éliminant 
+                le besoin de super-calculateurs GPU.
+              </p>
+              <ul>
+                <li><span class="fw-bold">Résultat</span> : Une réduction de <span class="fw-bold">40 %</span> de la consommation d'énergie et des coûts d'infrastructure drastiquement réduits.</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--- Section Services -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="text-center m-4" id="services">Nos services</h2>
+      <!--- Section Services -->
+      <section class="services py-5 bg-green-arkai">
 
-        <!--- Cartes services --->
-          <div class="row justify-content-center g-4">
+        <h2 class="text-center display-5 fw-bold" id="services">Nos services</h2>
+        <div class="divider divider-white mx-auto mb-5"></div>
 
-            <!--- Carte Licences API B2B -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center w-20 h-100">
-              <div class="card">
-                <img src="img/illustrations/diagram-3.svg" class="card-img-top w-25 h-25 d-block mx-auto m-4" alt="Illustration fonctionnement API">
-                <div class="card-body">
-                  <h5 class="card-title">Licences API B2B</h5>
-                  <p class="card-text">Intégrez notre modèle d'IA générative vertueuse directement dans vos logiciels d'entreprise via nos licences flexibles.</p>
-                  <a href="#" class="btn btn-primary">Demander un accès</a>
+        <div class="container">
+
+          <!--- Cartes services --->
+            <div class="row justify-content-center g-4">
+
+              <!--- Carte Licences API B2B -->
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="card border-0 shadow-sm card-hover h-100 d-flex flex-column">
+                  <img src="img/illustrations/diagram-3.svg" class="card-img-top w-25 h-25 d-block mx-auto m-4" alt="Illustration fonctionnement API">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Licences API B2B</h5>
+                    <p class="card-text">Intégrez notre modèle d'IA générative vertueuse directement dans vos logiciels d'entreprise via nos licences flexibles.</p>
+                    <a href="#" class="btn btn-primary mt-auto">Demander un accès</a>
+                  </div>
+                </div>
+              </div>
+
+              <!--- Carte Licences API B2B -->
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="card border-0 shadow-sm card-hover h-100">
+                  <img src="img/illustrations/cpu-fill.svg" class="card-img-top w-25 h-25 d-block mx-auto m-4" alt="Illustration CPU">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Intégration Edge & IoT</h5>
+                    <p class="card-text">Déployez de l'IA sur des systèmes embarqués ou des serveurs standards sans nécessiter de GPU coûteux (H100), grâce à notre technologie native.</p>
+                    <a href="#" class="btn btn-primary mt-auto">Découvrir les solutions</a>
+                  </div>
+                </div>
+              </div>
+
+              <!--- Carte Licences API B2B -->
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="card border-0 shadow-sm card-hover h-100">
+                  <img src="img/illustrations/bar-chart-fill.svg" class="card-img-top w-25 h-25 d-block mx-auto m-4" alt="Illustration de graphique à bar">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Optimisation des coûts d'inférence</h5>
+                    <p class="card-text">Réduisez vos dépenses matérielles et votre consommation énergétique de 40 % en exploitant les unités asynchrones de vos CPU actuels.</p>
+                    <a href="#" class="btn btn-primary mt-auto">Estimer mes économies</a>
+                  </div>
                 </div>
               </div>
             </div>
+        </div>
+      </section>
 
-            <!--- Carte Licences API B2B -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center w-20 h-100">
-              <div class="card">
-                <img src="img/illustrations/cpu-fill.svg" class="card-img-top w-25 h-25 d-block mx-auto m-4" alt="Illustration CPU">
-                <div class="card-body">
-                  <h5 class="card-title">Intégration Edge & IoT</h5>
-                  <p class="card-text">Déployez de l'IA sur des systèmes embarqués ou des serveurs standards sans nécessiter de GPU coûteux (H100), grâce à notre technologie native.</p>
-                  <a href="#" class="btn btn-primary">Découvrir les solutions</a>
+      <!-- Section contact -->
+      <section class="py-5">
+
+        <h2 class="text-center display-5 fw-bold title-underline" id="contact">Parlons ensemble</h2>
+        <div class="divider mx-auto bg-primary mb-5"></div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+              <p class="mb-4">
+                Vous souhaitez réduire vos coûts d'inférence et votre empreinte carbone ? Discutons 
+                de l'intégration de la technologie Feronia dans vos infrastructures, sans dépendance 
+                aux GPU coûteux.
+              </p>
+
+              <!-- Formulaire de contact -->
+              <form class="form-arkai p-4 rounded shadow-sm">
+
+                <div class="mb-3">
+                  <label for="nom">Nom</label>
+                  <input type="text" class="form-control" id="nom" aria-describedby="nom" placeholder="MEDO Louis" required>
                 </div>
-              </div>
-            </div>
 
-            <!--- Carte Licences API B2B -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center w-20 h-100">
-              <div class="card">
-                <img src="img/illustrations/bar-chart-fill.svg" class="card-img-top w-25 h-25 d-block mx-auto m-4" alt="Illustration de graphique à bar">
-                <div class="card-body">
-                  <h5 class="card-title">Optimisation des coûts d'inférence</h5>
-                  <p class="card-text">Réduisez vos dépenses matérielles et votre consommation énergétique de 40 % en exploitant les unités asynchrones de vos CPU actuels.</p>
-                  <a href="#" class="btn btn-primary">Estimer mes économies</a>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Adresse mail</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="email@exemple.fr" required>
                 </div>
-              </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Votre message</label>
+                  <textarea class="form-control" name="message" id="message">Bonjour, je vous écris parce que...</textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Envoyé le message</button>
+
+              </form>
             </div>
-          </div>
-      </div>
-    </section>
+          </div>     
+        </div>
+      </section>
+    </main>
 
-    <section class="py-5">
-      <div class="container">
-        <h2 class="text-center m-4" id="contact">Parlons ensemble</h2>
-      </div>
-    </section>
-
-    <footer>
-        
+    <footer class="bg-dark text-white py-3">
+        <div class="d-flex justify-content-center">
+          <p>© 2026 ArkAI - Tous droits réservés</p>
+        </div>
     </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -1,51 +1,49 @@
-/* Palette de couleurs ArkAI */
+/* ---------------------
+   Configuration globale
+   --------------------- */
 :root {
     /* Couleurs ArkAI */
-    --bs-primary: #10B981;       /* Le Vert ArkAI */
+    --arkai-primary: #10B981;       /* Vert principal */
+    --arkai-primary-hover: #059669; /* Vert foncé (survol) */
+    --arkai-dark: #1E293B;          /* Bleu nuit (texte) */
+
+    --bg-light-green: #47f5bb;
+
+    /* Surcharge Bootstrap */
+    --bs-primary: var(--arkai-primary);
     --bs-primary-rgb: 16, 185, 129;
-    
-    --bs-secondary: #0F172A;     /* Le Bleu Serveur */
-    --bs-secondary-rgb: 15, 23, 42;
 
-    --bs-body-bg: #F8FAFC;       /* Fond général */
-    --bs-body-color: #334155;    /* Couleur du texte */
+    /* */
+    --bs-body-font-family: 'Poppins', sans-serif;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
+/* ---------------------
+   Navbar et Hero
+   --------------------- */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
 }
 
-/* Bouton */
-.btn-primary {
-    background-color: var(--bs-primary);
-    border-color: var(--bs-primary);
-    color: white; /* Texte blanc sur fond vert */
+.logo {
+    width: 140px;
 }
 
-.btn-primary:hover {
-    background-color: #059669; /* Un vert un peu plus sombre au survol */
-    border-color: #059669;
-}
-
-.btn-success:hover {
-    background-color: #003827;
-}
-
-/* --- Navbar --- */
+/* Soulignement animé du menu */
 .nav-link-classic {
+    color: var(--arkai-dark);
     position: relative;
-    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
 }
 
 .nav-link-classic::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    bottom: 5px; left: 50%;
     transform: translateX(-50%);
-    width: 0;
-    height: 3px;
-    background-color: var(--bs-primary);
+    width: 0; height: 2px;
+    background-color: var(--arkai-primary);
     transition: width 0.3s ease;
 }
 
@@ -53,14 +51,75 @@ body {
     width: 80%;
 }
 
-/* Hero */
 .hero {
-    background-image: url("../img/background-foret.jpg");
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.6)), 
+                url("../img/background-foret.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+}
+
+/* ---------------------
+   COMPOSANTS
+   --------------------- */
+
+/* Section avec fond vert  */
+.bg-green-arkai {
+    background-color: var(--arkai-primary);
+    color: white;
+}
+
+/* Formulaire */
+.form-arkai {
+    background-color: var(--bg-light-green);
+    border: 1px solid #d1fae5;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol du formulaire */
+.form-arkai:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet au survol des cartes */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+/* Effet lors du passage de la souris */
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Barre de séparation sous les titres */
+.divider {
+    height: 4px;
+    width: 60px;
+    margin-top: 1rem;
+    border-radius: 2px;
+}
+
+/* Barre de séparation blanche */
+.divider-white {
+    background-color: white !important;
+}
+
+/* Boutons */
+.btn, .btn-primary {
+    background-color: var(--arkai-primary) !important;
+    border-color: var(--arkai-primary) !important;
+    color: white;
+    font-weight: 500;
+    padding: 10px 25px;
+}
+
+/* Survol des boutons */
+.btn-primary:hover {
+    background-color: var(--arkai-primary-hover) !important;
+    border-color: var(--arkai-primary-hover) !important;
+    color: white !important;
 }
