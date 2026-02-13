@@ -11,6 +11,10 @@
     --bs-body-color: #334155;    /* Couleur du texte */
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Bouton */
 .btn-primary {
     background-color: var(--bs-primary);
