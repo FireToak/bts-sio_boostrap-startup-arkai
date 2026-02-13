@@ -1,7 +1,55 @@
-nav {
-    position: fixed;
+/* Palette de couleurs ArkAI */
+:root {
+    /* Couleurs ArkAI */
+    --bs-primary: #10B981;       /* Le Vert ArkAI */
+    --bs-primary-rgb: 16, 185, 129;
+    
+    --bs-secondary: #0F172A;     /* Le Bleu Serveur */
+    --bs-secondary-rgb: 15, 23, 42;
+
+    --bs-body-bg: #F8FAFC;       /* Fond général */
+    --bs-body-color: #334155;    /* Couleur du texte */
 }
 
+/* Bouton */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: white; /* Texte blanc sur fond vert */
+}
+
+.btn-primary:hover {
+    background-color: #059669; /* Un vert un peu plus sombre au survol */
+    border-color: #059669;
+}
+
+.btn-success:hover {
+    background-color: #003827;
+}
+
+/* --- Navbar --- */
+.nav-link-classic {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link-classic::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: var(--bs-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link-classic:hover::after {
+    width: 80%;
+}
+
+/* Hero */
 .hero {
     background-image: url("../img/background-foret.jpg");
     background-size: cover;
